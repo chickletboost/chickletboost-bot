@@ -187,7 +187,7 @@ bot.action("check_order", async (ctx) => {
 
 // ─── Add Funds ───────────────────────────────────────────────────────────────
 bot.action("add_funds", async (ctx) => {
-  const websiteUrl = process.env.WEBSITE_URL || "https://yourwebsite.com";
+  const websiteUrl = process.env.WEBSITE_URL || "https://chickletboost.com";
   await ctx.editMessageText(
     `💳 <b>Add Funds to Your Account</b>\n\n` +
     `To top up your balance, visit our website and log in:\n` +
