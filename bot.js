@@ -233,6 +233,3 @@ bot.launch().then(() => {
 // Graceful stop
 process.once("SIGINT",  () => bot.stop("SIGINT"));
 process.once("SIGTERM", () => bot.stop("SIGTERM"));
-bot.on("message", (ctx) => {
-  console.log("MESSAGE RECEIVED:", ctx.message.text);
-});
