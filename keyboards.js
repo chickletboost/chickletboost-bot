@@ -1,8 +1,6 @@
 // keyboards.js — All inline keyboard builders in one place.
 
 const { Markup } = require("telegraf");
-const services = require("./services");
-
 /** Main menu shown after /start */
 const mainMenu = Markup.inlineKeyboard([
   [Markup.button.callback("🚀 Start Growth", "start_growth")],
