@@ -23,7 +23,17 @@ function smmKey() {
 
 async function smmPost(params) {
   const body = new URLSearchParams({ key: smmKey(), ...params });
-  const { data } = await axios.post(smmUrl(), body.toString(), {
+ let res;
+try {
+  res = await axios.post(
+    `${KORA_BASE}/charges/initialize`,
+    body,
+    { headers: koraHeaders(), timeout: 15000 }
+  );
+} catch (err) {
+  console.log("❌ KORAPAY ERROR:", err.response?.data || err.message);
+  throw err;
+} , body.toString(), {
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     timeout: 20000,
   });
