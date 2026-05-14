@@ -701,7 +701,8 @@ bot.on("text", async (ctx) => {
 // /admin deduct <userId> <amount>  — manually deduct from a user's wallet
 
 bot.command("admin", async (ctx) => {
-  if (ctx.from.id !== ADMIN_ID) return; // silently ignore non-admins
+  console.log(`[ADMIN] Sender ID: ${ctx.from.id}`);
+if (ctx.from.id !== ADMIN_ID) return;
 
   const parts  = ctx.message.text.trim().split(/\s+/);
   const sub    = parts[1]?.toLowerCase();
