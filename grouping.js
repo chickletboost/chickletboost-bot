@@ -7,35 +7,35 @@
 
 // ─── Platform definitions (detection order matters) ───────────────────────────
 const PLATFORMS = [
-  { key: "instagram",  label: "📸 Instagram",       keywords: ["instagram", "ig "] },
-  { key: "tiktok",     label: "🎵 TikTok",          keywords: ["tiktok", "tik tok"] },
-  { key: "youtube",    label: "▶️  YouTube",        keywords: ["youtube", "yt "] },
-  { key: "facebook",   label: "👤 Facebook",        keywords: ["facebook", "fb "] },
-  { key: "twitter",    label: "🐦 Twitter/X",       keywords: ["twitter", "twit", " x "] },
-  { key: "telegram",   label: "✈️  Telegram",       keywords: ["telegram"] },
-  { key: "spotify",    label: "🎵 Spotify",         keywords: ["spotify"] },
-  { key: "threads",    label: "🧵 Threads",         keywords: ["threads"] },
-  { key: "snapchat",   label: "👻 Snapchat",        keywords: ["snapchat"] },
-  { key: "linkedin",   label: "💼 LinkedIn",        keywords: ["linkedin"] },
-  { key: "website",    label: "🌐 Website/Traffic", keywords: ["website", "traffic", "seo", "web visit"] },
-  { key: "other",      label: "⭐ Other",           keywords: [] }, // catch-all
+  { key: "instagram",  label: " Instagram",       keywords: ["instagram", "ig "] },
+  { key: "tiktok",     label: " TikTok",          keywords: ["tiktok", "tik tok"] },
+  { key: "youtube",    label: "  YouTube",        keywords: ["youtube", "yt "] },
+  { key: "facebook",   label: " Facebook",        keywords: ["facebook", "fb "] },
+  { key: "twitter",    label: " Twitter/X",       keywords: ["twitter", "twit", " x "] },
+  { key: "telegram",   label: "  Telegram",       keywords: ["telegram"] },
+  { key: "spotify",    label: " Spotify",         keywords: ["spotify"] },
+  { key: "threads",    label: " Threads",         keywords: ["threads"] },
+  { key: "snapchat",   label: " Snapchat",        keywords: ["snapchat"] },
+  { key: "linkedin",   label: " LinkedIn",        keywords: ["linkedin"] },
+  { key: "website",    label: " Website/Traffic", keywords: ["website", "traffic", "seo", "web visit"] },
+  { key: "other",      label: " Other",           keywords: [] }, // catch-all
 ];
 
 // ─── Service-type definitions (detection order matters) ───────────────────────
 const SERVICE_TYPES = [
-  { key: "followers",    label: "👥 Followers",    keywords: ["follower"] },
-  { key: "subscribers",  label: "🔔 Subscribers",  keywords: ["subscriber"] },
-  { key: "members",      label: "👥 Members",      keywords: ["member"] },
-  { key: "likes",        label: "❤️  Likes",       keywords: ["like"] },
-  { key: "views",        label: "👁️  Views",       keywords: ["view", "watch time", "impression", "reel"] },
-  { key: "comments",     label: "💬 Comments",     keywords: ["comment"] },
-  { key: "shares",       label: "🔄 Shares",       keywords: ["share", "retweet", "repost"] },
-  { key: "reactions",    label: "😮 Reactions",    keywords: ["reaction", "emoji"] },
-  { key: "saves",        label: "🔖 Saves",        keywords: ["save"] },
-  { key: "story",        label: "📖 Story Views",  keywords: ["story"] },
-  { key: "live",         label: "📡 Live",         keywords: ["live stream", "live view"] },
-  { key: "traffic",      label: "🌐 Traffic",      keywords: ["traffic", "visit", "click", "website"] },
-  { key: "other",        label: "⭐ Other",        keywords: [] }, // catch-all
+  { key: "followers",    label: " Followers",    keywords: ["follower"] },
+  { key: "subscribers",  label: " Subscribers",  keywords: ["subscriber"] },
+  { key: "members",      label: " Members",      keywords: ["member"] },
+  { key: "likes",        label: "  Likes",       keywords: ["like"] },
+  { key: "views",        label: "  Views",       keywords: ["view", "watch time", "impression", "reel"] },
+  { key: "comments",     label: " Comments",     keywords: ["comment"] },
+  { key: "shares",       label: " Shares",       keywords: ["share", "retweet", "repost"] },
+  { key: "reactions",    label: " Reactions",    keywords: ["reaction", "emoji"] },
+  { key: "saves",        label: " Saves",        keywords: ["save"] },
+  { key: "story",        label: " Story Views",  keywords: ["story"] },
+  { key: "live",         label: " Live",         keywords: ["live stream", "live view"] },
+  { key: "traffic",      label: " Traffic",      keywords: ["traffic", "visit", "click", "website"] },
+  { key: "other",        label: " Other",        keywords: [] }, // catch-all
 ];
 
 // ─── Detection helpers ─────────────────────────────────────────────────────────
