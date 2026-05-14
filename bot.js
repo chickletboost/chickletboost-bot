@@ -498,7 +498,7 @@ bot.command("balance", async (ctx) => {
 
 bot.command("admin", async (ctx) => {
   console.log(`[ADMIN] Sender ID: ${ctx.from.id}`);
-// if (ctx.from.id !== ADMIN_ID) return;
+if (ctx.from.id !== ADMIN_ID) return; // silently ignore non-admins
 
   const parts  = ctx.message.text.trim().split(/\s+/);
   const sub    = parts[1]?.toLowerCase();
