@@ -111,7 +111,8 @@ async function ensureGrouped(ctx) {
 
 bot.start(async (ctx) => {
   resetSession(ctx);
-  const bal = await getBalance(uid(ctx));
+console.log(`[START] User ID: ${uid(ctx)}`);
+const bal = await getBalance(uid(ctx));
 
   // Save user to DB on first interaction
   await query(
